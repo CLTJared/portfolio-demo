@@ -66,26 +66,94 @@ article section h2 {
 
 }
 
-.content {
-    display: flex;
-    flex-direction: row;
-}
-
-.example {
-    flex: 1 1 auto;
-    background-color: lightpink;
-    line-height: 100px;
-    margin: .5rem;
-    vertical-align: middle;
-    text-align: center;
-    transition: flex-grow 500ms ease-in-out;
-}
-
-.example:hover {
-    flex: 2 1 auto;
-}
-
 footer {
     padding: 1rem;
     text-align: center;
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.example {
+    background-color: lightpink;
+    line-height: 5rem;
+    margin: .5rem;
+    vertical-align: middle;
+    text-align: center;
+    transition: all 500ms ease-in-out;
+    border-radius: 25px;
+    opacity: .5;
+    color: transparent;
+}
+
+.example:hover {
+    opacity: 1;
+    color: white;
+    font-weight: bold;
+    text-shadow: 2px 2px #000000;
+}
+
+#horiseon {
+    background-image: linear-gradient(
+        rgba(0, 0, 0, 0.5),
+        rgba(0, 0, 0, 0.5)), url(../images/search-engine-optimization.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+#css-snippet {
+    background-image: linear-gradient(
+        rgba(0, 0, 0, 0.5),
+        rgba(0, 0, 0, 0.5)), url(../images/css-cheat-sheet.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+@media screen and (min-width:768px) {
+    .content {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        height: auto;
+    }
+    
+    .example {
+        flex: 1 0 auto;
+        background-color: lightpink;
+        line-height: 100px;
+        margin: .5rem;
+        vertical-align: middle;
+        text-align: center;
+        transition: all 500ms ease-in-out;
+        border-radius: 25px;
+        opacity: .5;
+        color: transparent;
+    }
+    
+    .example:hover {
+        flex: 2 0 auto;
+        opacity: 1;
+        color: white;
+        font-weight: bold;
+        text-shadow: 2px 2px #000000;
+    }
+
+    #horiseon {
+        background-image: linear-gradient(
+            rgba(0, 0, 0, 0.5),
+            rgba(0, 0, 0, 0.5)), url(../images/search-engine-optimization.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+
+    #css-snippet {
+        background-image: linear-gradient(
+            rgba(0, 0, 0, 0.5),
+            rgba(0, 0, 0, 0.5)), url(../images/css-cheat-sheet.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
 }
