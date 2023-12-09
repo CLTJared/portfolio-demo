@@ -1,1 +1,91 @@
 /* CSS for Portfolio Site */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 16px;
+    width: 100%;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+}
+
+header h1 {
+    display: flex;
+    flex: 1 1 auto;
+    padding: .5rem;
+}
+
+nav {
+    display: flex;
+    flex: 1 1 auto;
+    flex-direction: column;
+
+    padding: .5rem;
+    text-align: right;
+}
+
+nav ul {
+    list-style-type: none;
+}
+
+nav a {
+    text-decoration: none;
+    line-height: 1.5rem;
+}
+
+nav li:hover a {
+    text-decoration: underline;
+}
+
+nav li:hover::before {
+    content: '↠';
+    text-decoration: none;
+    margin-right: 1rem;
+}
+
+main {
+
+}
+
+article {
+
+}
+
+article section {
+    display: flex;
+    flex-direction: column;
+}
+
+article section h2 {
+
+}
+
+.content {
+    display: flex;
+    flex-direction: row;
+}
+
+.example {
+    flex: 1 1 auto;
+    background-color: lightpink;
+    line-height: 100px;
+    margin: .5rem;
+    vertical-align: middle;
+    text-align: center;
+    transition: flex-grow 500ms ease-in-out;
+}
+
+.example:hover {
+    flex: 2 1 auto;
+}
+
+footer {
+    padding: 1rem;
+    text-align: center;
+}
