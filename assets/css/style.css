@@ -27,6 +27,7 @@ body {
 h2,h3,h4,h5 {
     /* Set h2-h5 with some default values to be used */
     font-family: "Play";
+    text-transform: uppercase;
     padding: 0;
     margin: 0;
     color: var(--light-blue);
