@@ -25,6 +25,7 @@ body {
 }
 
 h2,h3,h4,h5 {
+    /* Set h2-h5 with some default values to be used */
     font-family: "Play";
     padding: 0;
     margin: 0;
@@ -37,8 +38,10 @@ h2,h3,h4,h5 {
 }
 
 a, a:visited, a:active {
-    color: var(--light-blue);
+    /* style normal, visited and active links to look the same */
+    color: var(--pink);
     text-decoration: none;
+    font-weight: normal;
 }
 
 a:hover {
@@ -51,6 +54,7 @@ header {
 }
 
 header img {
+    /* Adjustment to make it visually more appealing on the avatar image */
     margin-top: -.5rem;
 }
 
@@ -60,6 +64,8 @@ header h1 {
     flex: 1 1 auto;
     padding: 1rem;
     color: var(--light-blue);
+
+    /* Create an outline around the text */
     text-shadow: 3px 3px 0 black, -3px 3px 0 black, -3px -3px 0 black, 3px -3px 0 black;
 }
 
@@ -67,8 +73,10 @@ header h1 mark {
     background-color: transparent;
     color: var(--pink);
 
+    /* Create an outline around the text */
     text-shadow: 3px 3px 0 rgb(99, 26, 26), -3px 3px 0 rgb(99, 26, 26), -3px -3px 0 rgb(99, 26, 26), 3px -3px 0 rgb(99, 26, 26);
 
+    /* skew and overlap the text to give feeling of depth */
     margin-left: -125px;
     margin-top: 25px;
     transform: skewY(-5deg);
@@ -86,8 +94,8 @@ nav {
 nav ul {
     list-style-type: none;
     text-transform: uppercase;
-    margin-left: -1.8rem;
-    margin-top: -1rem;
+    margin-left: -1.8rem; /* Allow for nav highlight to overlap edge of avatar laptop */
+    margin-top: -1rem; /* Allow for nav highlight to overlap edge of avatar laptop */
 }
 
 nav li {
@@ -96,24 +104,24 @@ nav li {
 }
 
 nav a, nav a:visited, nav a:active {
+    /* when in nav element - style normal, visited and active links to look the same */
     text-decoration: none;
     line-height: 1.2rem;
     color: var(--slate);
 }
 
-nav li:hover {
+nav li:hover { /* Navigation li hover styling */
     background-color: var(--pink);
     transition: all 500ms ease-in-out;
 }
 
-nav li:hover a {
+nav li:hover a { /* Navigation li hover styling */
     text-decoration: none;
     color: white;
 }
 
 main {
     width: 100%;
-
 }
 
 article {
@@ -124,11 +132,9 @@ article {
 article section {
     display: flex;
     flex-direction: column;
-    text-shadow:
-    1px 1px 0 var(--slate),
-    -1px 1px 0 var(--slate),
-    -1px -1px 0 var(--slate),
-    1px -1px 0 var(--slate);
+
+    /* Create an outline around the text */
+    text-shadow: 1px 1px 0 var(--slate), -1px 1px 0 var(--slate), -1px -1px 0 var(--slate), 1px -1px 0 var(--slate);
 }
 
 article section h2 {
@@ -183,6 +189,7 @@ a span {
         rgba(0, 0, 0, 0.3)), url(../images/search-engine-optimization.jpg);
     background-size: cover;
     background-repeat: no-repeat;
+    line-height: 10rem;
 }
 
 #css-snippet { /* Background Image for Project */
@@ -233,20 +240,7 @@ a span {
     line-height: 1.5rem;
     list-style-type: none;
     width: 100%;
-    text-align: center;
-}
-
-#contact-list li {
-    display: inline-block;
-    width: 33%;
-}
-
-#contact-list li:first-child {
-    text-align: left;
-}
-
-#contact-list li:last-of-type {
-    text-align: right;
+    margin-top: 1rem;
 }
 
 footer {
@@ -336,5 +330,23 @@ footer h6 {
             rgba(0, 0, 0, 0.5)), url(../images/css-cheat-sheet.jpg);
         background-size: cover;
         background-repeat: no-repeat;
+    }
+
+    #contact-list {
+        text-align: center;
+        margin-left: 0;
+    }
+
+    #contact-list li {
+        display: inline-block;
+        width: 33%;
+    }
+    
+    #contact-list li:first-child {
+        text-align: left;
+    }
+    
+    #contact-list li:last-of-type {
+        text-align: right;
     }
 }
