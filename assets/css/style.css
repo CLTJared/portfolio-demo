@@ -229,10 +229,24 @@ a span {
     background-repeat: no-repeat;
 }
 
-#contact ul {
-    margin: .5rem 2rem;
+#contact-list {
     line-height: 1.5rem;
     list-style-type: none;
+    width: 100%;
+    text-align: center;
+}
+
+#contact-list li {
+    display: inline-block;
+    width: 33%;
+}
+
+#contact-list li:first-child {
+    text-align: left;
+}
+
+#contact-list li:last-of-type {
+    text-align: right;
 }
 
 footer {
