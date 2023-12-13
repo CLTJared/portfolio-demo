@@ -149,6 +149,10 @@ article section h2 {
     margin: 1rem 0;
 }
 
+.content p {
+    margin: .5rem 0;
+}
+
 .example {
     background-color: var(--slate);
     line-height: 5rem;
@@ -160,6 +164,7 @@ article section h2 {
     opacity: .5;
     text-shadow: none;
     border: 5px white solid;
+    font-size: 1.5rem;
 }
 
 a span {
@@ -282,6 +287,11 @@ footer h6 {
         transition: all 500ms ease-in-out;
     }
 
+    article:hover {
+        background-image: linear-gradient(rgba(72,0,85,.5), rgba(72,0,85,.5));
+        transition: all 500ms ease-in-out;
+    }
+
     .content {
         display: flex;
         flex-direction: row;
@@ -303,11 +313,9 @@ footer h6 {
         opacity: .5;
         color: transparent;
         border: 5px var(--purple) solid;
+        font-size: 2rem;
     }
 
-    .example:nth-child(1) {
-        flex: 0 0 98%;
-    }
     
     .example:nth-child(n+2):hover {
         flex: 2 0 auto;
@@ -323,6 +331,8 @@ footer h6 {
             rgba(0, 0, 0, 0.2)), url(../images/search-engine-optimization.jpg);
         background-size: cover;
         background-repeat: no-repeat;
+        line-height: 20rem;
+        flex: 0 0 98%;
     }
 
     #css-snippet {
