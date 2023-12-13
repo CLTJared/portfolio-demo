@@ -287,9 +287,17 @@ footer h6 {
         transition: all 500ms ease-in-out;
     }
 
+    article:last-child {
+        background-image: none;
+    }
+
     article:hover {
         background-image: linear-gradient(rgba(72,0,85,.5), rgba(72,0,85,.5));
         transition: all 500ms ease-in-out;
+    }
+    
+    article:last-child:hover {
+        background-image: none;
     }
 
     .content {
